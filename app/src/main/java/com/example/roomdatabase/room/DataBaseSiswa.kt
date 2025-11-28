@@ -1,5 +1,6 @@
 package com.example.roomdatabase.room
 
+import android.content.Context
 import androidx.room.Database
 import androidx.room.RoomDatabase
 
@@ -10,4 +11,7 @@ abstract class DatabaseSiswa : RoomDatabase() {
     companion object {
         @Volatile
         private var Instance: DatabaseSiswa? = null
+
+        fun getDataBase(context: Context): DatabaseSiswa {
+            return (Instance?: synchronized(this){
 }
