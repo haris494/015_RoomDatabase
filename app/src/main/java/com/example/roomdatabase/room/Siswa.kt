@@ -1,3 +1,6 @@
 package com.example.roomdatabase.room
 
-data class Siswa()
+import androidx.room.Entity
+
+
+@Entity(tableName = "tbl Siswa")
