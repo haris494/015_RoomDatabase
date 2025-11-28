@@ -4,3 +4,4 @@ import androidx.room.Entity
 
 
 @Entity(tableName = "tbl Siswa")
+data class Siswa (
