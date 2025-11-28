@@ -1,3 +1,6 @@
 package com.example.roomdatabase.room
 
-data class SiswaDao()
+import androidx.room.Dao
+
+@Dao
+interface SiswaDao {
